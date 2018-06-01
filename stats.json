@@ -1,0 +1,106 @@
+{
+  "assetsByChunkName": {
+    "component---src-layouts-index-tsx": [
+      "component---src-layouts-index-tsx-4ee2c857ed404f9a208d.js",
+      "component---src-layouts-index-tsx-4ee2c857ed404f9a208d.js.map"
+    ],
+    "path---master-classes": [
+      "path---master-classes-a0e39f21c11f6a62c5ab.js",
+      "path---master-classes-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---contacts": [
+      "path---contacts-a0e39f21c11f6a62c5ab.js",
+      "path---contacts-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---": [
+      "path----ff80a395365fc00fde34.js",
+      "path----ff80a395365fc00fde34.js.map"
+    ],
+    "path---prof": [
+      "path---prof-a0e39f21c11f6a62c5ab.js",
+      "path---prof-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-master-classes-tsx": [
+      "component---src-pages-master-classes-tsx-a1cc1041836b65e0ced1.js",
+      "component---src-pages-master-classes-tsx-a1cc1041836b65e0ced1.js.map"
+    ],
+    "path---courses": [
+      "path---courses-a0e39f21c11f6a62c5ab.js",
+      "path---courses-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-contacts-tsx": [
+      "component---src-pages-contacts-tsx-33029f1eacea90461d9c.js",
+      "component---src-pages-contacts-tsx-33029f1eacea90461d9c.js.map"
+    ],
+    "component---src-pages-courses-tsx": [
+      "component---src-pages-courses-tsx-2f0868dc568d227b6e4b.js",
+      "component---src-pages-courses-tsx-2f0868dc568d227b6e4b.js.map"
+    ],
+    "path---education": [
+      "path---education-a0e39f21c11f6a62c5ab.js",
+      "path---education-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-education-tsx": [
+      "component---src-pages-education-tsx-78dfd2a2b674cefe50bb.js",
+      "component---src-pages-education-tsx-78dfd2a2b674cefe50bb.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-about-tsx": [
+      "component---src-pages-about-tsx-d3079d0f9e8a244ceea7.js",
+      "component---src-pages-about-tsx-d3079d0f9e8a244ceea7.js.map"
+    ],
+    "path---сonsulting": [
+      "path---сonsulting-a0e39f21c11f6a62c5ab.js",
+      "path---сonsulting-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "commons": [
+      "commons-df017bd4ffbed285c7fa.js",
+      "commons-df017bd4ffbed285c7fa.js.map"
+    ],
+    "component---src-pages-404-tsx": [
+      "component---src-pages-404-tsx-c3f1179ef31e3033d235.js",
+      "component---src-pages-404-tsx-c3f1179ef31e3033d235.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-prof-tsx": [
+      "component---src-pages-prof-tsx-f570763b300134c99870.js",
+      "component---src-pages-prof-tsx-f570763b300134c99870.js.map"
+    ],
+    "component---src-pages-shadule-tsx": [
+      "component---src-pages-shadule-tsx-ac4ecde508a72265f5d6.js",
+      "component---src-pages-shadule-tsx-ac4ecde508a72265f5d6.js.map"
+    ],
+    "component---src-pages-index-tsx": [
+      "component---src-pages-index-tsx-61450cbd8ded6f0bc5c9.js",
+      "component---src-pages-index-tsx-61450cbd8ded6f0bc5c9.js.map"
+    ],
+    "app": [
+      "app-75f7dc2fe29cab72d051.js",
+      "build-js-styles.css",
+      "app-75f7dc2fe29cab72d051.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---shadule": [
+      "path---shadule-a0e39f21c11f6a62c5ab.js",
+      "path---shadule-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---about": [
+      "path---about-a0e39f21c11f6a62c5ab.js",
+      "path---about-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-сonsulting-tsx": [
+      "component---src-pages-сonsulting-tsx-ed27eba053463c2a1fc1.js",
+      "component---src-pages-сonsulting-tsx-ed27eba053463c2a1fc1.js.map"
+    ]
+  }
+}
