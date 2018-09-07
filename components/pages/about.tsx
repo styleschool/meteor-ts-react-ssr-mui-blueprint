@@ -25,8 +25,8 @@ export const styles: StyleRulesCallback = () => ({
 export const Component = (props : any) => {
   const { classes } = props;
   return (
-    <div className={classes.root}>
-    <Header/>
+    <div className={ classes.root }>
+      <Header/>
       <Fillimage imgSrc="/pages/about/fullscreen.jpg" height={600} positionY="top" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div style={{
           marginTop: 64,
