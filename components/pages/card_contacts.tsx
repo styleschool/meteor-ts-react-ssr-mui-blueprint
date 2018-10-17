@@ -15,11 +15,9 @@ import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 
-const styles: StyleRulesCallback = (theme: Theme) => ({
-  root: {
-    width: "50%"
-  },
+import Panorama from "./panorama" 
 
+const styles: StyleRulesCallback = (theme: Theme) => ({
   details: {
     display: "flex"
   },
@@ -36,15 +34,14 @@ const styles: StyleRulesCallback = (theme: Theme) => ({
   },
 
   content: {
-    flex: "1 0 auto",
+    flex: "1 1 auto",
     paddingBottom: 0,
     paddingTop: 0
   }, 
   
   divider: {
-    left: 24,
     position: 'relative',
-    width: '90%',
+    width: '100%',
   }
 });
 
@@ -64,69 +61,68 @@ class Component extends React.Component<any, any> {
     const { expanded } = this.state;
 
     return (
-      <div className={classes.root}>
-        <Card>
-          <ExpansionPanel
-            expanded={expanded === "panel"}
-            onChange={this.handleChange("panel")}
-          >
-            <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography variant="subheading">Наши контакты</Typography>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
-              <div className={classes.details}>
-                <CardMedia
-                  className={classes.media}
-                  image="/pages/about/panorama.jpg"
-                  title="Map"
-                />
-                <div className={classes.direction}>
-                  <CardContent
-                    className={classes.content}
-                    style={{
-                      paddingBottom: 0
-                    }}
-                  >
-                    <List>
-                      <ListItem>
-                        <ListItemText
-                          primary="Адрес:"
-                          secondary="129085, Москва, ул. Проспект Мира, д.101, стр. 1, 600 офис."
-                        />
-                      </ListItem>
-                      <Divider component="li" className={classes.divider} />
-                      <ListItem>
-                        <ListItemText
-                          primary="Телефон:"
-                          secondary="+7 (495) 221-89-35"
-                        />
-                      </ListItem>
-                      <Divider component="li" className={classes.divider} />
-                      <ListItem>
-                        <ListItemText
-                          primary="E-mail:"
-                          secondary={
-                            <a href="mailto:info@styleschool.ru">
-                              info@styleschool.ru
-                            </a>
-                          }
-                        />
-                      </ListItem>
-                      <Divider component="li" className={classes.divider} />
-                      <ListItem>
-                        <ListItemText
-                          primary="Время работы:"
-                          secondary="Пн - Пт с 10:00 до 19:00 (мск)"
-                        />
-                      </ListItem>
-                    </List>
-                  </CardContent>
-                </div>
+      <Card>
+        <ExpansionPanel
+          expanded={expanded === "panel"}
+          onChange={this.handleChange("panel")}
+        >
+          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography variant="subheading">Наши контакты</Typography>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails>
+            <div className={classes.details}>
+              {/*<CardMedia
+                className={classes.media}
+                image="/pages/about/panorama.jpg"
+                title="Map"
+              />*/}
+              <Panorama className={classes.media} />
+              <div className={classes.direction}>
+                <CardContent
+                  className={classes.content}
+                  style={{
+                    paddingBottom: 0
+                  }}
+                >
+                  <List>
+                    <ListItem disableGutters={true}>
+                      <ListItemText
+                        primary="Адрес:"
+                        secondary="129085, Москва, ул. Проспект Мира, д.101, стр. 1, 600 офис."
+                      />
+                    </ListItem>
+                    <Divider component="li" className={classes.divider} />
+                    <ListItem disableGutters={true}>
+                      <ListItemText
+                        primary="Телефон:"
+                        secondary="+7 (495) 221-89-35"
+                      />
+                    </ListItem>
+                    <Divider component="li" className={classes.divider} />
+                    <ListItem disableGutters={true}>
+                      <ListItemText
+                        primary="E-mail:"
+                        secondary={
+                          <a href="mailto:info@styleschool.ru">
+                            info@styleschool.ru
+                          </a>
+                        }
+                      />
+                    </ListItem>
+                    <Divider component="li" className={classes.divider} />
+                    <ListItem disableGutters={true}>
+                      <ListItemText
+                        primary="Время работы:"
+                        secondary="Пн - Пт с 10:00 до 19:00 (мск)"
+                      />
+                    </ListItem>
+                  </List>
+                </CardContent>
               </div>
-            </ExpansionPanelDetails>
-          </ExpansionPanel>
-        </Card>
-      </div>
+            </div>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+      </Card>
     );
   }
 }

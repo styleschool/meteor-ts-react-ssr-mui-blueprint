@@ -13,14 +13,10 @@ import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 
 const styles: StyleRulesCallback = (theme: Theme) => ({
-  root: {
-    width: "50%"
-  },
-  
   divider: {
     left: 24,
     position: 'relative',
-    width: '90%',
+    width: '100%',
   }
 });
 
@@ -40,44 +36,42 @@ class Component extends React.Component<any, any> {
     const { expanded } = this.state;
 
     return (
-      <div className={classes.root}>
-          <ExpansionPanel 
-            expanded={expanded === "panel2"}
-            onChange={this.handleChange("panel2")}>
-            <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography variant="subheading">
-              Реквизиты
-              </Typography>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
-             <List>
-                <ListItem>
-                  <ListItemText primary="Негосударственное образовательное частное учреждение «Центр дополнительного образования «Высшая школа стилистики»»" />
-                </ListItem>
-                <Divider component="li" className={classes.divider} />
-                <ListItem>
-                  <ListItemText primary="ИНН" secondary="7707047775" />
-                  <ListItemText primary="КПП" secondary="770701001" />
-                  <ListItemText primary="ОГРН" secondary="1117799000186" />
-                </ListItem>
-                <Divider component="li" className={classes.divider} />
-                <ListItem>
-                  <ListItemText primary="Адрес для корреспонденции:" secondary="127055, Москва, ул. Новослободская д.14/19 стр.1" />
-                </ListItem>
-                <Divider component="li" className={classes.divider} />
-                <ListItem>
-                  <ListItemText secondary="р/с 40703810600000000063 в «Банк Кремлевский» (ООО), г. Москва" />
-                </ListItem>
-                <ListItem>
-                  <ListItemText secondary="к/с 30101810745250000196" />
-                </ListItem>
-                <ListItem>
-                  <ListItemText secondary="БИК 044525196" />
-                </ListItem>
-              </List>
-            </ExpansionPanelDetails>
-          </ExpansionPanel>
-      </div>
+      <ExpansionPanel 
+        expanded={expanded === "panel"}
+        onChange={this.handleChange("panel")}>
+        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography variant="subheading">
+          Реквизиты
+          </Typography>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
+         <List>
+            <ListItem>
+              <ListItemText primary="Негосударственное образовательное частное учреждение «Центр дополнительного образования «Высшая школа стилистики»»" />
+            </ListItem>
+            <Divider component="li" className={classes.divider} />
+            <ListItem>
+              <ListItemText primary="ИНН" secondary="7707047775" />
+              <ListItemText primary="КПП" secondary="770701001" />
+              <ListItemText primary="ОГРН" secondary="1117799000186" />
+            </ListItem>
+            <Divider component="li" className={classes.divider} />
+            <ListItem>
+              <ListItemText primary="Адрес для корреспонденции:" secondary="127055, Москва, ул. Новослободская д.14/19 стр.1" />
+            </ListItem>
+            <Divider component="li" className={classes.divider} />
+            <ListItem>
+              <ListItemText secondary="р/с 40703810600000000063 в «Банк Кремлевский» (ООО), г. Москва" />
+            </ListItem>
+            <ListItem>
+              <ListItemText secondary="к/с 30101810745250000196" />
+            </ListItem>
+            <ListItem>
+              <ListItemText secondary="БИК 044525196" />
+            </ListItem>
+          </List>
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
     );
   }
 }

@@ -4,6 +4,7 @@ import About from './pages/about';
 import Contacts from './pages/contacts';
 import CardContacts from './pages/card_contacts';
 import CardDetails from './pages/card_details';
+import Panorama from './pages/panorama';
 
 export class Routes extends React.Component {
   render() {
@@ -14,6 +15,7 @@ export class Routes extends React.Component {
         <Route path="/contacts" component={Contacts}/>
         <Route path="/card_contacts" component={CardContacts}/>
         <Route path="/card_details" component={CardDetails}/>
+        <Route path="/panorama" component={Panorama}/>
       </Switch>
     </div>;
   }
