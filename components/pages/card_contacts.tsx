@@ -71,11 +71,6 @@ class Component extends React.Component<any, any> {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <div className={classes.details}>
-              {/*<CardMedia
-                className={classes.media}
-                image="/pages/about/panorama.jpg"
-                title="Map"
-              />*/}
               <Panorama className={classes.media} />
               <div className={classes.direction}>
                 <CardContent
